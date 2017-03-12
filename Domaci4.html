@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Domaci4</title>
+</head>
+<body>
+<script type="text/javascript">
+var test_niz1 = [1, 6, 2, 5, 7, 2, 8, 3];
+var test_niz2 = [45, 62, 123, 63, 74, 85, 21, 77];
+var test_niz3 = [-6, 23, 10, 0, -22, 52, 86, 2];
+
+var novi_test_niz = [];
+
+function multiplyEvenAndOdds(array) 
+{
+  for(var i = 0 ; i < array.length; i++) 
+  {
+    if(array[i]%2==0) 
+    {
+      novi_test_niz.push(array[i]*3);
+    }
+    else 
+    {
+      novi_test_niz.push(array[i]*4);
+    }
+  }
+  console.log(novi_test_niz);
+}
+
+multiplyEvenAndOdds(test_niz1);
+multiplyEvenAndOdds(test_niz2);
+multiplyEvenAndOdds(test_niz3);
+
+
+
+
+
+
+
+
+
+
+	
+</script>
+</body>
+</html>

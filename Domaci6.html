@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Domaci6</title>
+</head>
+<body>
+<script type="text/javascript">
+var test_niz1 = [1, 6, 2, 5, 7, 2, 8, 3];
+var test_niz2 = [45, 62, 123, 63, 74, 85, 21, 77];
+var test_niz3 = [-6, 23, 10, 0, -22, 52, 86, 2];
+// Ako je treći argument true treba napraviti novi niz
+// od elemenata ulaznog koji su VEĆI ili JEDNAKI od
+// zadatog broja. Ako je treći argument false treba 
+// napraviti novi niz od elemenata ulaznog koji su
+// MANJI od zadatog broja. Funkcija vraća niz
+function filterOutElements(array, limit, direction) 
+{
+  var noviNiz = [];
+  if (direction==true) 
+  {
+    for(var i = 0 ; i < array.length; i++)
+    {
+      if (limit<=array[i])
+      {
+        noviNiz.push(array[i]);
+      }
+    }
+  }
+  else if (direction==false) 
+  {
+    for(var i = 0 ; i < array.length; i++) 
+    {
+      if (limit>=array[i]) 
+      {
+        noviNiz.push(array[i]);
+      }
+    }
+  }
+  console.log(noviNiz);
+}
+filterOutElements(test_niz1, 3,true);
+
+
+
+
+
+
+
+
+
+
+
+
+	
+</script>
+</body>
+</html>

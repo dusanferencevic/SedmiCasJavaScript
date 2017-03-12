@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Domaci3</title>
+</head>
+<body>
+<script type="text/javascript">
+	var people = [
+  {
+    name: 'Joe Schmoe',
+    yearsExperience: 1,
+    department: 'IT'
+  },
+  {
+    name: 'Sally Sallerson',
+    yearsExperience: 15,
+    department: 'Engineering'
+  },
+  {
+    name: 'Bill Billson',
+    yearsExperience: 5,
+    department: 'Engineering'
+  },
+  {
+    name: 'Jane Janet',
+    yearsExperience: 11,
+    department: 'Management'
+  },
+  {
+    name: 'Bob Hope',
+    yearsExperience: 9,
+    department: 'IT'
+  },
+  {
+    name: 'John Doe',
+    yearsExperience: 7,
+    department: 'Management'
+  }
+];
+var zaposleni = [];
+
+function foo(objekat) 
+{
+  for(var i = 0 ; i < objekat.length; i++)
+  {
+    zaposleni.push(objekat[i].name);
+  }
+  console.log(zaposleni);
+}
+
+foo(people);
+
+
+
+
+
+
+
+
+
+	
+</script>
+</body>
+</html>
